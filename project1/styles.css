@@ -48,12 +48,13 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.wrapper {
+.wrapper__container {
   min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
+/* ------------------------Header -------------------*/
 .header {
 }
 .header__container {
@@ -68,16 +69,11 @@ body {
   align-items: center;
   gap: 20px;
   padding: 20px 0;
-  list-style: none;
   font-size: 16px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
 
 }
 .menu_list__item {
-  text-decoration: none;
-  cjlolor: rgb(255, 255, 255);
-  
 }
 .btn {
   display: inline-block;
@@ -88,13 +84,30 @@ body {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-.page {
-  flex: 1 1 auto;  
+
+/* ------------------------content -------------------*/
+.content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;          /* растянуть на всю ширину */
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.social-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
+.page {
+  flex: 1;
+  width: 100%; 
+}
+/* ------------------------footer -------------------*/
 .footer { 
 }
-
+/* ------------------------adaptive -------------------*/
 [class*="__container"] {
   max-width: 1170px;
   margin: 0 auto;
