@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;700&display=swap');
 *, 
 *::before,
 *::after {
@@ -85,45 +85,111 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* ------------------------content -------------------*/
-.content {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;          /* растянуть на всю ширину */
-  gap: 5px;
-  padding: 5px;
-  box-sizing: border-box;
-  position: relative;
-}
+
 /* ----aside -------------------*/
 .social-sidebar {
   display: flex;
   flex-direction: column;
   width: auto;
 }
+
 /* ----main -------------------*/
-.page {
-  flex: 1;
-  width: 100%; 
-}
-.section-home {
+.banner__container {
+
   display: flex;
+  align-items: center;
+  max-width: 1440px;
   justify-content: space-between;
-  flex-direction: column;
-  height: calc(100vh - 80px); /* высота экрана минус высота шапки */
-  padding: 10px;
+}
+.banner__container__portfolio {
   position: relative;
-  
+  width: 600px;
 }
-.section-home-photo {
-  width: 100%;
-
-}
-.section-home__text-block {
+.banner__container__img {
   position: absolute;
-  top: 50%;
+  top: -70px;
+  left: -30px;
 }
-
+.banner__container__btns {
+  margin-top: 20px;
+  display: flex;
+}
+.btn-border {
+  margin-left: 10px;
+  border:1px solid white;
+  background-color: inherit;
+}
+.banner__container__ellipse {
+  width: 400px;
+}
+.intro--title{
+  font-size: 16px;
+  font-weight: 100;
+  margin: 10px 0;
+}
+.intro--greeting {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.intro--text {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 20px 0;
+}
+/* ------------------------about-------------------*/
+.category {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  display: inline-block;               /* Чтобы фон обтекал текст */
+  padding: 8px 16px;                   /* Внутренние отступы */
+  background-color: rgba(0, 0, 0, 0.3); /* Тёмный фон с прозрачностью */
+  border-radius: 8px;                  /* Закругление углов */
+  font-size: 16px;                     /* Размер текста */
+  font-weight: 600;                    /* Средняя жирность */
+  backdrop-filter: blur(4px);         /* Модный эффект "стекла" */
+  text-align: center;
+}
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px;
+  background-color: rgb(36, 38, 59);
+}
+.about__block {
+  display: flex;
+  align-items: center;
+  space-direction: center;
+}
+.about__block__img {
+  width: 400px;
+}
+.about__title {
+  font-size: 16px;
+  height: 400px;
+  width: 450px;
+  margin: 10px 0;
+}
+.about__title--name {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.about__title--description {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 20px 0;
+}
+.about--contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.list--contact {
+  margin-bottom: 10px;
+}
 /* ------------------------footer -------------------*/
 .footer { 
   display: flex;
@@ -139,6 +205,7 @@ body {
 [class*="__container"] {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 @media (max-width: 1199.98px) {
@@ -159,4 +226,3 @@ body {
     padding: 0 15px;
   }
 }
-

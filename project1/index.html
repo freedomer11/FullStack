@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
-        <title>CV Resume</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__container">
-                    <nav class="header__nav">
-                        <ul class="menu_list">
-                            <li class="menu_list__item">
-                                <a href="#home" style="color: #ff0000; font-weight: bold">Home</a>
-                            </li>
-                            <li class="menu_list__item">
-                                <a href="#about">About</a>
-                            </li>
-                            <li class="menu_list__item">
-                                <a href="#portfolio">Portfolio</a>
-                            </li>
-                            <li class="menu_list__item">
-                                <a href="#services">Services</a>
-                            </li>
-                            <li class="menu_list__item">
-                                <a href="#resume">Resume</a>
-                            </li>
-                            <li class="menu_list__item">
-                                <a href="#contact">Contact</a>
-                            </li>
-                            <li class="menu_list__item">
-                                <a class="btn" href="cv.pdf">Download CV</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <div class="content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CV Resume</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+        <div class="header__container">
+          <nav class="header__nav">
+            <ul class="menu_list">
+              <li class="menu_list__item">
+                <a href="#home" style="color: #ff0000; font-weight: bold"
+                  >Home</a
+                >
+              </li>
+              <li class="menu_list__item">
+                <a href="#about">About</a>
+              </li>
+              <li class="menu_list__item">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li class="menu_list__item">
+                <a href="#services">Services</a>
+              </li>
+              <li class="menu_list__item">
+                <a href="#resume">Resume</a>
+              </li>
+              <li class="menu_list__item">
+                <a href="#contact">Contact</a>
+              </li>
+              <li class="menu_list__item">
+                <a class="btn" href="cv.pdf">Download CV</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        </header>
+        <main>
+            <section class="banner__container">
                 <aside class="social-sidebar">
                     <a href="https://ua.linkedin.com/">
-                        <img src="images/Linked.png" alt="LinkedIn" />
+                      <img src="images/Linked.png" alt="LinkedIn" />
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="images/instagram.png" alt="instagram" />
+                      <img src="images/instagram.png" alt="instagram" />
                     </a>
                     <a href="https://www.behance.net/">
-                        <img src="images/Behance.png" alt="Behancce photo" />
+                      <img src="images/Behance.png" alt="Behancce photo" />
                     </a>
                 </aside>
-                <main class="page">
-                    <section class="section-home" id="home">
-                        <div class="section-home-photo">
-                            <img src="images/Ellipse8.png" />
-                            <img src="images/cerculFPsXdRubi.png" alt="LinkedIn" />
-                        </div>
-                        <div class="section-home__text-block">  
-                            <p>welcome My Portfolio</p>
-                            <h1>Hello, i‘m Johan Deo Professional Designer.</h1>
-                            <p>Conveniently customize proactive web services for leveraged without 
-                            continualliery aggregate fricctionle ou wellies richard.
+                    <div class="banner__container__portfolio">
+                        <img class="banner__container__img" src="images/Ellipse8.png" />
+                        <span class="intro--title">Welcome My Portfolio</span>
+                        <h1 class="intro--greeting">Hello, i‘m Johan Deo <span style="color: #ff0000;">Professional</span> Designer.</h1>
+                        <p class="intro--text">
+                        Conveniently customize proactive web services for leveraged without
+                        continualliery aggregate fricctionle ou wellies richard.
                         </p>
+                        <div class="banner__container__btns">
+                        <a class="btn">Hire Me</a>
+                        <a class="btn btn-border">Download CV</a>
                         </div>
-                    </section>
-                    <section class="main_content" id="about">
-                        <h2>About Me</h2>
-                        <p>Here you can find information about my background, skills, and experiences.</p>
-                    </section>
-                    <section class="main_content" id="portfolio">
-                        <h2>Portfolio</h2>
-                        <p>Check out my work and projects that I have completed.</p>
-                    </section>
-                    <section class="main_content" id="services">
-                        <h2>Services</h2>
-                        <p>Learn about the services I offer and how I can help you.</p>
-                    </section>
-                    <section class="main_content" id="resume">
-                        <h2>Resume</h2>
-                        <p>View my professional resume and qualifications.</p>
-                    </section>
-                    <section class="main_content" id="client">
-                        <h2>Client</h2>
-                        <p>Information about my clients and testimonials.</p>
-                    </section>
-                    <section class="main_content" id="blog">
-                        <h2>Blog</h2>
-                        <p>Read my latest blog posts and articles.</p>
-                    </section>
-                    <section class="main_content" id="contact">
-                        <h2>Contact</h2>
-                        <p>Get in touch with me through the contact form or my social media links.</p>
-                    </section>
-                </main>
-            </div>
-            <footer class="footer">
-                <p>&copy; 2025 My CV Resume. All rights reserved.</p>
-                <p>Designed by Bohdan Zozulia</p>
-            </footer>
-        </div>
-    </body>
+                    </div>
+                    <div>
+                        <img class="banner__container__ellipse" src="./images/cerculFPsXdRubi.png" alt="" />
+                    </div>
+            </section>
+            <section class="about__container" id="about">
+                <div class="about__block">
+                    <img class="about__block__img" src="./images/aboutblock.png" alt="About block photo" />
+                    <div class="about__title">
+                        <h2 class="category">About Me</h2>
+                        <h3 class="about__title--name">Johan Deo</h3>
+                        <p class="about__title--description">
+                            Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.
+                        </p>
+                        <div class="about--contact">
+                            <ul>
+                                <li class="list--contact"><span>Birthday: </span><span class="about__title--description">15 April 1990</span></li>
+                                <li class="list--contact"><span>Website: </span><span class="about__title--description">www.fgorman.com </span></li>
+                                <li class="list--contact"><span>Phone: </span><span class="about__title--description">+1 650 123 4444</span></li>
+                                <li class="list--contact"><span>Study: </span><span class="about__title--description">Univercity of Harvard</span></li>
+                            </ul>
+                            <ul>
+                                <li class="list--contact"><span>Dgree: </span><span class="about__title--description">Master</span></li>
+                                <li class="list--contact"><span>Mail: </span><span class="about__title--description">info@biophoto.com</span></li>
+                                <li class="list--contact"><span>Linkedin: </span><span class="about__title--description">@biophotography</span></li>
+                                <li class="list--contact"><span>Freelance: </span><span class="about__title--description">Available</span></li>
+                            </ul>
+                        </div>
+                        <a class="btn">Download CV</a> 
+                    </div> 
+                </div>
+            </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 My CV Resume. All rights reserved.</p>
+            <p>Designed by Bohdan Zozulia</p>
+        </footer>
+    </div>
+  </body>
 </html>
+
