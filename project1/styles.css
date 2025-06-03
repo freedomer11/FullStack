@@ -90,22 +90,42 @@ body {
   display: flex;
   align-items: flex-start;
   width: 100%;          /* растянуть на всю ширину */
-  gap: 20px;
-  padding: 20px;
+  gap: 5px;
+  padding: 5px;
   box-sizing: border-box;
 }
+/* ----aside -------------------*/
 .social-sidebar {
   display: flex;
   flex-direction: column;
   width: auto;
 }
-
+/* ----main -------------------*/
 .page {
   flex: 1;
   width: 100%; 
 }
+.section-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px); /* высота экрана минус высота шапки */
+  padding: 20px;
+  
+}
+
+
 /* ------------------------footer -------------------*/
 .footer { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0;
+  gap: 10px;
+  margin: 20px;
+  background-color: rgb(36, 38, 59);
 }
 /* ------------------------adaptive -------------------*/
 [class*="__container"] {
