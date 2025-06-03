@@ -93,6 +93,7 @@ body {
   gap: 5px;
   padding: 5px;
   box-sizing: border-box;
+  position: relative;
 }
 /* ----aside -------------------*/
 .social-sidebar {
@@ -107,14 +108,21 @@ body {
 }
 .section-home {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: calc(100vh - 80px); /* высота экрана минус высота шапки */
-  padding: 20px;
+  padding: 10px;
+  position: relative;
   
 }
+.section-home-photo {
+  width: 100%;
 
+}
+.section-home__text-block {
+  position: absolute;
+  top: 50%;
+}
 
 /* ------------------------footer -------------------*/
 .footer { 
