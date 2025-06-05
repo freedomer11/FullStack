@@ -201,13 +201,13 @@ body {
 
 .category {
   margin-top: 50px;
-  display: inline-block; /* Чтобы фон обтекал текст */
-  padding: 8px 16px; /* Внутренние отступы */
-  background-color: rgba(0, 0, 0, 0.3); /* Тёмный фон с прозрачностью */
-  border-radius: 8px; /* Закругление углов */
-  font-size: 16px; /* Размер текста */
-  font-weight: 600; /* Средняя жирность */
-  backdrop-filter: blur(4px); /* Модный эффект "стекла" */
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
   text-align: center;
 }
 .portfolio_nav {
