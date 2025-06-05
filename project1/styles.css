@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;700&display=swap');
-*, 
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;700&display=swap");
+*,
 *::before,
 *::after {
   margin: 0;
@@ -10,7 +10,7 @@
 
 a {
   text-decoration: none;
-  color: inherit;            
+  color: inherit;
   outline: none;
 }
 
@@ -37,12 +37,12 @@ h6 {
 html,
 body {
   height: 100%;
-  background-color:rgb(31, 34, 53);
+  background-color: rgb(31, 34, 53);
 }
 
 body {
   line-height: 1;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgb(255, 255, 255);
@@ -71,20 +71,18 @@ body {
   padding: 20px 0;
   font-size: 16px;
   font-weight: 700;
-
 }
 .menu_list__item {
 }
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #FE461C;
+  background-color: #fe461c;
   color: rgb(255, 255, 255);
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
 
 /* ----aside -------------------*/
 .social-sidebar {
@@ -95,7 +93,6 @@ body {
 
 /* ----main -------------------*/
 .banner__container {
-
   display: flex;
   align-items: center;
   max-width: 1440px;
@@ -116,13 +113,13 @@ body {
 }
 .btn-border {
   margin-left: 10px;
-  border:1px solid white;
+  border: 1px solid white;
   background-color: inherit;
 }
 .banner__container__ellipse {
   width: 400px;
 }
-.intro--title{
+.intro--title {
   font-size: 16px;
   font-weight: 100;
   margin: 10px 0;
@@ -141,20 +138,20 @@ body {
 .category {
   margin-bottom: 20px;
   margin-top: 0px;
-  display: inline-block;               /* Чтобы фон обтекал текст */
-  padding: 8px 16px;                   /* Внутренние отступы */
+  display: inline-block; /* Чтобы фон обтекал текст */
+  padding: 8px 16px; /* Внутренние отступы */
   background-color: rgba(0, 0, 0, 0.3); /* Тёмный фон с прозрачностью */
-  border-radius: 8px;                  /* Закругление углов */
-  font-size: 16px;                     /* Размер текста */
-  font-weight: 600;                    /* Средняя жирность */
-  backdrop-filter: blur(4px);         /* Модный эффект "стекла" */
+  border-radius: 8px; /* Закругление углов */
+  font-size: 16px; /* Размер текста */
+  font-weight: 600; /* Средняя жирность */
+  backdrop-filter: blur(4px); /* Модный эффект "стекла" */
   text-align: center;
 }
 .about__container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 0px;
+  space-direction: center;
   background-color: rgb(36, 38, 59);
 }
 .about__block {
@@ -222,18 +219,24 @@ body {
 
 .item {
   border-radius: 8px;
-  
 }
 
 .item.big {
   grid-row: span 2;
 }
-.item__text-portfolio-block {
-  elaign-items: flex-end;
+.text {
+  justify-content: flex-start;
+  align-content: flex-end;
+  color: white;
+  height: 100%;
+  padding: 10px;
 }
-
+.smole-text {
+  font-size: 10px;
+  font-weight: 100;
+}
 /* ------------------------footer -------------------*/
-.footer { 
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
