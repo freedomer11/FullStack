@@ -22,6 +22,8 @@ li {
 
 img {
   vertical-align: top;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -38,12 +40,13 @@ html,
 body {
   height: 100%;
   background-color: rgb(31, 34, 53);
+  font-size: 16px;
 }
 
 body {
   line-height: 1;
   font-family: "Outfit", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
@@ -55,41 +58,36 @@ body {
   flex-direction: column;
 }
 /* ------------------------Header -------------------*/
-.header {
-}
 .header__container {
   justify-content: flex-end;
   align-items: center;
   display: flex;
-}
-.header__nav {
+  padding: 1rem;
 }
 .menu_list {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px 0;
-  font-size: 16px;
+  gap: 1.25rem; /* ✅ 20px → rem */
+  padding: 1.25rem 0;
+  font-size: 1rem;
   font-weight: 700;
-}
-.menu_list__item {
 }
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* ✅ 10px 20px → rem */
   background-color: #fe461c;
   color: rgb(255, 255, 255);
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 /* ----aside -------------------*/
 .social-sidebar {
-  portfolio: apsolute;
   display: flex;
   flex-direction: column;
   width: auto;
+  flex-wrap: wrap
 }
 
 /* ----main -------------------*/
@@ -151,13 +149,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  space-direction: center;
+  flex-direction: center;
   background-color: rgb(36, 38, 59);
 }
 .about__container__block {
   display: flex;
   align-items: center;
-  space-direction: center;
+  flex-direction: center;
 }
 .about__container__block-img {
   width: 400px;
@@ -218,6 +216,7 @@ body {
   margin-bottom: 20px;
 }
 .portfolio__container__block {
+  display: flex;
   justify-content: center;
 }
 .portfolio__container__photo-block {
@@ -284,6 +283,9 @@ body {
   font-weight: 100;
 }
 /* ------------------------Resume -------------------*/
+.resume__container {
+  justify-content: center;
+}
 .resume__container__block {
   display: flex;
   align-items: center;
@@ -377,5 +379,6 @@ body {
   [class*="__container"] {
     max-width: none;
     padding: 0 15px;
+    display: column;
   }
 }
