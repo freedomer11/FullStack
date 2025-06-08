@@ -38,10 +38,10 @@ h6 {
 
 html,
 body {
-  height: 100%;
+  height: 100hw;
   width: 100vw;
   background-color: rgb(31, 34, 53);
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 body {
@@ -51,11 +51,12 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
+  justify-content: center;
 }
 
 .wrapper__container {
   width: 100vw;
-  min-height: 100%;
+
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -78,7 +79,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 
 .central-circle img {
@@ -102,8 +103,8 @@ body {
 /* Каждая иконка */
 .orbit-icon {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 3.3rem;
+  height: 3.3rem;
 }
 
 .orbit-icon img {
@@ -167,7 +168,7 @@ body {
   gap: 1.25rem; /* ✅ 20px → rem */
   padding: 1.25rem 0;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: bold;
 }
 .btn {
   display: inline-block;
@@ -253,7 +254,7 @@ body {
   display: inline-block;
   padding: 0.5rem 1.1rem;
   background-color: rgba(0, 0, 0, 0.3); 
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-size: 1rem; 
   font-weight: 600; 
   backdrop-filter: blur(0.25rem);
@@ -271,10 +272,10 @@ body {
   align-items: center;
   flex-direction: center;
 }
-.about__container__block-img {
-  width: 25rem;
+.about__block-img {
+  width: 20rem;
 }
-.about__container__title {
+.about__title {
   font-size: 1rem;
   height: 25rem;
   width: 29.375rem;
@@ -304,7 +305,7 @@ body {
 
 /* ------------------------portfolio -------------------*/
 .portfolio__container {
-  padding: 20px;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,22 +313,22 @@ body {
 }
 
 .category {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   font-weight: 600;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(0.25rem);
   text-align: center;
 }
 .portfolio_nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 1.25rem;;
+  margin-bottom: 1.25rem;
 }
 .portfolio__container__block {
   display: flex;
@@ -337,14 +338,14 @@ body {
 .portfolio__container__photo-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 130px;
-  column-gap: 20px;
-  row-gap: 20px;
-  width: 900px;
+  grid-auto-rows: 8.125rem;
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+  width: 56.25rem;
 }
 
 .item {
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .item.big {
@@ -355,16 +356,16 @@ body {
   align-content: flex-end;
   color: white;
   height: 100%;
-  padding: 10px;
+  padding: 0.625rem;
 }
 .smole-text {
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 100;
 }
 .title__container__name {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 /* ------------------------sWhy choose us -------------------*/
 .why-choose-us__container {
@@ -483,7 +484,7 @@ body {
   padding: 2rem 1rem 3rem 2rem;
   border-radius: 0.8rem;
   width: 100%;
-  max-width: 350px;
+  max-width: 21.875rem;
   box-shadow: 0 0 0.98rem rgba(0,0,0,0.2);
   margin: 1.1rem;
 }
@@ -541,27 +542,29 @@ body {
   object-fit: cover;
 }
 /*------------------------footer -------------------*/
-.footer {
+.footer__container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  padding: 20px 0;
-  gap: 10px;
-  margin: 20px;
+  padding: 1rem 0;
+  gap: 0.52rem;
+  margin: 1rem;
   background-color: rgb(36, 38, 59);
+  overflow-x: hidden;
+  max-width: 1200px;
 }
 /* ------------------------adaptive -------------------*/
 [class*="__container"] {
-  max-width: 1180px;
-  min-width: 320px;
+  max-width: 75rem;
+  min-width: 20rem;
   margin: 0 auto;
   padding: 1rem;
 }
 
 @media (max-width: 1199.98px) {
   [class*="__container"] {
-    max-width: 970px;
+    max-width: 90%;
     margin: 0.1em auto;
   }
   .why-choose-us__container__tiles {
@@ -581,23 +584,17 @@ body {
   }
   .about__container__title {
     font-size: 1rem;
-    height: 25rem
-  400px
-;
-    width: 31.375rem;
-
-
-
-
-
-
-
-
-
+    height: 25rem;
+  }
+  .banner__container {
+    justify-content: start;
+  }
+}
 
 @media (max-width: 990.98px) {
   [class*="__container"] {
     max-width: 750px;
+    margin: 0.1em auto;
   }
   .why-choose-us__container__tiles {
     grid-template-columns: repeat(2, 1fr); /* ✅ 2 колонки */
@@ -606,8 +603,8 @@ body {
 
 @media (max-width: 767.98px) {
   [class*="__container"] {
-    max-width: none;
-    padding: 0 15px;
+    max-width: 429.98px;
+    padding: 0 0.5rem;
     display: column;
   }
   .why-choose-us__container__tiles {
