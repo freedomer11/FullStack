@@ -67,6 +67,7 @@ body {
   position: relative;
   width: 20rem;
   height: 20rem;
+  left: 3rem;
 }
 
 .central-circle {
@@ -180,6 +181,10 @@ body {
   transition: background-color 0.3s ease;
 }
 /* ----content-wrapper__container-------------------*/
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
 .content-wrapper__container {
   display: flex;
   min-height: 100vh;
@@ -215,12 +220,12 @@ body {
 }
 .banner__img {
   position: absolute;
-  top: -3.895rem;
-  left: -4.9rem;
+  top: -1.595rem;
+  left: -5.9rem;
 }
 
-.banner__container__btns {
-  margin-top: 20px;
+.banner__btns {
+  margin-top: 4.25rem;
   display: flex;
 }
 .btn-border {
@@ -386,10 +391,9 @@ body {
   padding: 1.52rem 0.52rem 1.52rem 0.52rem;
   justify-content: start;
   border-radius: 0.5rem;
-  min-width: 12.5rem;
 }
 .tile__img {
-  margin: 1rem;
+  margin-left: 1rem;
 }
 .tile__title {
   margin: 1rem;
@@ -397,8 +401,8 @@ body {
   font-weight: bold;
 }
 .tile__text {
-  margin: 1rem;
-  font-size: 1rem;
+  margin: 0.1rem 1rem;
+  font-size: 0.7rem;
   font-weight: 100;
 }
 /* ------------------------Resume -------------------*/
@@ -476,6 +480,7 @@ body {
 }
  .testimonial-cards {
   display: flex;
+  margin-bottom: 2.5rem;
  }
  .testimonial-card {
   position: relative;
@@ -541,6 +546,55 @@ body {
   height: 100%;
   object-fit: cover;
 }
+/* ------------------------blog-post -------------------*/
+.blog-post__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blog-post-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  gap: 2rem;
+ }
+ .blog-post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 18rem;
+  max-width: 20.875rem;
+  margin: 0.5rem;
+}
+.blog-post-photo {
+  width: 100%;
+  max-width: 21rem;
+  height: 12rem;
+}
+.blog-post-bar{
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.52rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+  width: 80%;
+}
+.name-blog-post {
+  font-size: 0.98rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  width: 70%;
+}
+.blog-post-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: gray;
+  width: 85%;
+}
+
 /*------------------------footer -------------------*/
 .footer__container {
   display: flex;
